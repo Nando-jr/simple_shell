@@ -14,7 +14,7 @@ int main(void)
 
 	while (1)
 	{
-		printf("$ ");
+		printf("#cisfun$ ");
 		getline(&buffer, &len, stdin);
 		printf("%s", buffer);
 	}

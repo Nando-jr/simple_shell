@@ -53,7 +53,7 @@ typedef struct mybuild
 	void (*func)(char **);
 } mybuild;
 
-/*void(*checkbuild(char **arv))(char **arv);*/
+void(*checkbuild(char **arv))(char **arv);
 int _atoi(char *s);
 void exitt(char **arv);
 void env(char **arv);

@@ -39,7 +39,7 @@ typedef struct list_path
 
 char *_getenv(const char *name);
 list_path *add_node_end(list_path **head, char *str);
-/*list_path *linkpath(char *path);*/
+list_path *linkpath(char *path);
 char *_which(char *filename, list_path *head);
 
 /**

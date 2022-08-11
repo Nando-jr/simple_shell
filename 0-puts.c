@@ -19,6 +19,16 @@ int _strlen(char *s)
 }
 
 /**
+ * print_prompt - prints a prompt for the shell
+ */
+void print_prompt(void)
+{
+	char *s = "$ ";
+
+	write(1, s, 2);
+}
+
+/**
  * _putchar - writes the character c to stdout
  * @c: The character to print
  *

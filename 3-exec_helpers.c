@@ -11,7 +11,7 @@ void sigint_handler(int sig)
 {
 	(void)sig;
 	 _putchar('\n');
-	 _puts("#cisfun$ ");
+	 print_prompt();
 	 fflush(stdout);
 }
 

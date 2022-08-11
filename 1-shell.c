@@ -110,11 +110,12 @@ int main(int ac, char *av[])
 	while (1)
 	{
 		if (isatty(STDIN_FILENO) != 0 && isatty(STDOUT_FILENO) != 0)
-			_puts("#cisfun$ ");
+			print_prompt();
 		get = getline(&line, &len, stdin);
 		if (get < 0)
 		{
 			if (isatty(STDIN_FILENO) != 0 && isatty(STDOUT_FILENO) != 0)
+				_putchar('\n');
 			break;
 		}
 		cmd_count++;

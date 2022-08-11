@@ -46,11 +46,10 @@ void _isatty(void)
 int main(void)
 {
 	ssize_t len = 0;
-	char *buff = NULL;
-	/*char *value, *pathname, **arv;*/
+	char *buff = NULL, *value, *pathname, **arv;
 	size_t size = 0;
-	/*list_path *head = '\0';
-	void (*f)(char **);*/
+	list_path *head = '\0';
+	void (*f)(char **);
 
 	signal(SIGINT, sig_handler);
 	while (len != EOF)
@@ -58,8 +57,8 @@ int main(void)
 		_isatty();
 		len = getline(&buff, &size, stdin);
 		_EOF(len, buff);
-		/*arv = splitstring(buff, " \n");*/
-		/*if (!arv || !arv[0])
+		arv = splitstring(buff, " \n");
+		if (!arv || !arv[0])
 			execute(arv);
 		else
 		{
@@ -84,7 +83,6 @@ int main(void)
 	}
 	free_list(head);
 	freearv(arv);
-	free(buff);*/
-	}
+	free(buff);
 	return (0);
 }

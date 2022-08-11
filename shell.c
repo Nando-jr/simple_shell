@@ -30,6 +30,7 @@ void _EOF(int len, char *buff)
 		exit(0);
 	}
 }
+
 /**
  * _isatty - verify if terminal
  */

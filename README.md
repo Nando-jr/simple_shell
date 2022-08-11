@@ -1,7 +1,7 @@
 # Project Simple_Shell
 This is a simple UNIX command line interpreter
 
-Functionlities:
+## Functionlities:
 Displays a prompt "#cisfun$ " and waits for user input.\
 Runs all commands of type "executable program" (ls and /bin/ls).\
 Runs the following build_in commands: exit, env, setenv and unsetenv.\
